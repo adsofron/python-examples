@@ -3,6 +3,6 @@ This is a repository that contains a few python code examples. Some of the exerc
 
 Version 3 of Python has been used (3.6.x)
 
-https://sonarcloud.io/api/project_badges/measure?project=python-examples&metric=alert_status
-https://sonarcloud.io/api/project_badges/measure?project=python-examples&metric=code_smells
-https://sonarcloud.io/api/project_badges/measure?project=python-examples&metric=bugs
+[https://sonarcloud.io/api/project_badges/measure?project=python-examples&metric=alert_status]
+[https://sonarcloud.io/api/project_badges/measure?project=python-examples&metric=code_smells]
+[https://sonarcloud.io/api/project_badges/measure?project=python-examples&metric=bugs]
