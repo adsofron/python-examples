@@ -46,6 +46,7 @@ coverage.xml
 *.cover
 .hypothesis/
 .scannerwork
+.sonarlint
 
 # Translations
 *.mo
