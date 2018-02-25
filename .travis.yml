@@ -1,20 +1,25 @@
 language: python
 python:
-- '3.6'
-script:
-- sonar-scanner
+  - '3.6'
+
 dist: trusty
 sudo: required
+
 addons:
   sonarcloud:
-    organization: adsofron-github
+    organization: "adsofron-github"
     token:
-      secure: "mfSQ9uSCY19DDJ6SpKiMlUK2QhwLm86XicxWg7Yl7XmTUuuiTdADplq2c5WwIfozRGqa8IlcSx5QGLQ/Pt5RIrc35MoAyLgwpZOL8gsqrnhqflIdosY2Q5K1gM1YMtHqGrDATBOppfT5prpml0Tpabuugzyzaa+F1AvEygsKG2I7AYkJ8DYuwZ+9cws3OIoUN9SgpWoBBYG/9Tbsb1SA9wzoHr2vtSOW/d/+674a/OPsmgwUeaueoKQVy2wQKiWbvgVUjwG7CFNrtLlO1jUrW+x/zxVrSp7Miv4m3MkcDfQ0B5u4bWs4CVg2DvIlmuyU+beh8JdQx+Qep7Rzqc87j8zDlMy47nGxx56gTbL5KJBSDFk8DiReDR7a4+LA2fukFlkn6kPloKwps6tVDEsfgGbyyAIhqkkKz1EjiNgPmolUJJdho3Qzky4D7ljmK+m2clYl7vBwxWwhqOh2Uxdmf/5HBGBf/BnlqtdOczBqMmJ/FKGsQeBvnU1upAY+RzyaZxjvnD7T4/0i0cFuC4bVhkI+gWrSrUgwSmF5A5pzrPZatONhy+0UDdrApwfMn8TbPwKE0l++kHeAw8yKkqTAdaKj7C6xi3fEUOUuiBTtudQi0vJSlf1+dD25KTp+0latAAY0d+HyR0SAsfcbT3d7y6kykufmGEKe5SitRxTgkDk="
+      secure: "mfSQ9uSCY19DDJ6SpKiMlUK2QhwLm86XicxWg7Yl7XmTUuuiTdADplq2c5WwIfozRGqa8IlcSx5QGLQ/Pt5RIrc35MoAyLgwpZOL8gsqrnhqflIdosY2Q5K1gM1YMtHqGrDATBOppfT5prpml0Tpabuugzyzaa+F1AvEygsKG2I7AYkJ8DYuwZ+9cws3OIoUN9SgpWoBBYG/9Tbsb1SA9wzoHr2vtSOW/d/+674a/OPsmgwUeaueoKQVy2wQKiWbvgVUjwG7CFNrtLlO1jUrW+x/zxVrSp7Miv4m3MkcDfQ0B5u4bWs4CVg2DvIlmuyU+beh8JdQx+Qep7Rzqc87j8zDlMy47nGxx56gTbL5KJBSDFk8DiReDR7a4+LA2fukFlkn6kPloKwps6tVDEsfgGbyyAIhqkkKz1EjiNgPmolUJJdho3Qzky4D7ljmK+m2clYl7vBwxWwhqOh2Uxdmf/5HBGBf/BnlqtdOczBqMmJ/FKGsQeBvnU1upAY+RzyaZxjvnD7T4/0i0cFuC4bVhkI+gWrSrUgwSmF5A5pzrPZatONhy+0UDdrApwfMn8TbPwKE0l++kHeAw8yKkqTAdaKj7C6xi3fEUOUuiBTtudQi0vJSlf1+dD25KTp+0latAAY0d+HyR0SAsfcbT3d7y6kykufmGEKe5SitRxTgkDk=l"
 jdk:
-- oraclejdk8
+  - oraclejdk8
+script:
+  - sonar-scanner
 cache:
   directories:
-  - "$HOME/.sonar/cache"
+    - '$HOME/.sonar/cache'
+
+
+
 env:
   global:
     secure: mfSQ9uSCY19DDJ6SpKiMlUK2QhwLm86XicxWg7Yl7XmTUuuiTdADplq2c5WwIfozRGqa8IlcSx5QGLQ/Pt5RIrc35MoAyLgwpZOL8gsqrnhqflIdosY2Q5K1gM1YMtHqGrDATBOppfT5prpml0Tpabuugzyzaa+F1AvEygsKG2I7AYkJ8DYuwZ+9cws3OIoUN9SgpWoBBYG/9Tbsb1SA9wzoHr2vtSOW/d/+674a/OPsmgwUeaueoKQVy2wQKiWbvgVUjwG7CFNrtLlO1jUrW+x/zxVrSp7Miv4m3MkcDfQ0B5u4bWs4CVg2DvIlmuyU+beh8JdQx+Qep7Rzqc87j8zDlMy47nGxx56gTbL5KJBSDFk8DiReDR7a4+LA2fukFlkn6kPloKwps6tVDEsfgGbyyAIhqkkKz1EjiNgPmolUJJdho3Qzky4D7ljmK+m2clYl7vBwxWwhqOh2Uxdmf/5HBGBf/BnlqtdOczBqMmJ/FKGsQeBvnU1upAY+RzyaZxjvnD7T4/0i0cFuC4bVhkI+gWrSrUgwSmF5A5pzrPZatONhy+0UDdrApwfMn8TbPwKE0l++kHeAw8yKkqTAdaKj7C6xi3fEUOUuiBTtudQi0vJSlf1+dD25KTp+0latAAY0d+HyR0SAsfcbT3d7y6kykufmGEKe5SitRxTgkDk=
