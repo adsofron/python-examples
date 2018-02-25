@@ -5,11 +5,11 @@ Created on Wed Jan 10 22:47:09 2018
 @author: Alina
 """
 
-def iterPower(base,exp):
+def iter_power(base,exp):
     '''
     base: int or float.
     exp: int >= 0
- 
+
     returns: int or float, base^exp
     '''
     # Your code here
@@ -18,5 +18,5 @@ def iterPower(base,exp):
         result = result * base
 
     return result
- 
-print(  iterPower(2,4))
+
+print(iter_power(2,4))

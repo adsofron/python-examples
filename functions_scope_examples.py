@@ -6,9 +6,9 @@ Created on Tue Jan  9 22:43:58 2018
 """
 
 x = 12
-def g(x):
+def num_1(x):
       x = x + 1
-      def h(y):
+      def num_2(y):
           return x + y
-      return h(6)
-g(x)
+      return num_2(6)
+print(num_1(x))
